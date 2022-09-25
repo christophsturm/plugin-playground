@@ -1,18 +1,8 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.christophsturm.pluginplayground</id>
-    <name>plugin-playground</name>
+    <name>Plugins Playground</name>
     <vendor>christophsturm</vendor>
 
     <depends>com.intellij.modules.platform</depends>
-
-    <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.christophsturm.pluginplayground.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.christophsturm.pluginplayground.services.MyProjectService"/>
-    </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.christophsturm.pluginplayground.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </applicationListeners>
 </idea-plugin>
